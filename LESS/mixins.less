@@ -1,0 +1,28 @@
+.flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+}
+
+.btn(@txt-color, @border-color, @bg-color) {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 18px;
+    background-color: @bg-color;
+    color: @txt-color;
+    border: 2px solid @border-color;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.text-shadow() {
+    text-shadow: 0px 0px 6px rgb(40, 40, 40);
+}
+
+.section() {
+    width: 90%;
+    margin: 20px;
+    border: 2px solid @wmp-green-dark;
+    padding: 20px;
+}
