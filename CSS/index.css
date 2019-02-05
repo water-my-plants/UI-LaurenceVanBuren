@@ -47,6 +47,22 @@ header .btn-row .sign-up {
   background-color: #FFFFFF;
   color: #000000;
   text-shadow: none;
+  transition: 0.1s ease;
+}
+header .btn-row .sign-up:hover {
+  background-color: #5aab61;
+  border-color: #5aab61;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 6px #282828;
+  transition: 0.1s ease;
+}
+header .btn-row .learn-more {
+  transition: 0.1s ease;
+}
+header .btn-row .learn-more:hover {
+  border-color: #5aab61;
+  color: #5aab61;
+  transition: 0.1s ease;
 }
 main {
   background-color: #FFFFFF;
@@ -63,7 +79,17 @@ main section.intro {
   justify-content: none;
   align-items: flex-start;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
+  padding: 10px 10% 30px;
+  background-color: #5aab61;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 3px #3c3c3c;
+}
+main section.intro h2 {
+  margin-bottom: 5px;
+}
+main section.intro p {
+  margin: 10px 0;
 }
 main .section-container {
   display: flex;
@@ -80,7 +106,7 @@ main .section-container section {
   flex-direction: column;
   width: 90%;
   margin: 20px;
-  border: 2px solid #25523b;
+  border: 2px solid #5aab61;
   padding: 20px;
 }
 main .section-container section h3 {
@@ -90,8 +116,54 @@ main .section-container section img {
   width: 100%;
 }
 footer {
-  height: 100px;
-  width: 100px;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  top: 600px;
+  background-color: #5aab61;
+  padding: 40px 0;
+}
+footer h3 {
+  margin: 10px 0;
+}
+footer .download-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 20px 0;
+}
+footer .download-links img {
+  margin: 0 10px;
+}
+footer .download-links a.apple {
+  background-image: url(../Images/apple-button.png);
+}
+footer .download-links a.google {
+  background-image: url(../Images/google-play-button.png);
+}
+footer .social-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 20px 0;
+}
+footer .social-links a {
+  margin: 0 5px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 30px;
+  transition: 0.2s ease;
+}
+footer .social-links a:hover {
+  color: #FFFFFF;
+  transition: 0.2s ease;
 }
 * {
   box-sizing: border-box;
