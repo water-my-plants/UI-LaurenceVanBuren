@@ -1,28 +1,25 @@
 main {
-    background-color: @white;
+    // background-color: @white;
+    background-color: @wmp-green-light;
     width: 100%;
     position: relative;
     top: 600px;
     .flex(none, center, column);
 
-    @media @desktop {
-        background-color: @wmp-green-light;
-    }
-
     section.intro {
         .flex(none, flex-start, column);
         width: 100%;
-        padding: 0 5% 30px;
+        padding: 0 5%;
         background-color: @wmp-green-light;
         color: @white;
         text-shadow: 1px 1px 3px rgb(60, 60, 60);
 
         @media @tablet {
-            padding: 0 10% 30px;
+            padding: 0 10%;
         }
 
         @media @desktop {
-            padding: 0 15% 30px;
+            padding: 0 15% 10px;
         }
 
         h2 {
@@ -41,7 +38,6 @@ main {
         padding: 20px 20px 0;
 
         @media @desktop {
-            // background-color: @wmp-green-light;
             .flex(space-between, center, row);
             flex-wrap: wrap;
             padding: 0 15%;
@@ -51,11 +47,12 @@ main {
             .flex(space-between, flex-start, column);
             .section();
             width: 100%;
+            background-color: @wmp-green-dark;
+            color: @white;
+            .text-shadow();
+            .box-shadow();
 
             @media @desktop {
-                // .flex(space-between, flex-start, column);
-                background-color: @wmp-green-med;
-                color: @white;
                 width: 45%;
                 height: 650px;
             }
@@ -71,10 +68,7 @@ main {
 
             img {
                 width: 100%;
-                @media @desktop {
-                    border: 2px solid @wmp-yellow;
-                    // max-height: 60%;
-                }
+                border: 2px solid @wmp-yellow;
             }
         }
     }

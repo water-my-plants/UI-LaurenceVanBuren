@@ -106,7 +106,7 @@ header .btn-row .learn-more:hover {
   transition: 0.1s ease;
 }
 main {
-  background-color: #FFFFFF;
+  background-color: #5aab61;
   width: 100%;
   position: relative;
   top: 600px;
@@ -115,30 +115,25 @@ main {
   align-items: center;
   flex-direction: column;
 }
-@media (min-width: 1000px) {
-  main {
-    background-color: #5aab61;
-  }
-}
 main section.intro {
   display: flex;
   justify-content: none;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  padding: 0 5% 30px;
+  padding: 0 5%;
   background-color: #5aab61;
   color: #FFFFFF;
   text-shadow: 1px 1px 3px #3c3c3c;
 }
 @media (min-width: 501px) {
   main section.intro {
-    padding: 0 10% 30px;
+    padding: 0 10%;
   }
 }
 @media (min-width: 1000px) {
   main section.intro {
-    padding: 0 15% 30px;
+    padding: 0 15% 10px;
   }
 }
 main section.intro h2 {
@@ -175,9 +170,12 @@ main .section-container section {
   flex-direction: column;
   width: 90%;
   margin: 20px;
-  border: 2px solid #5aab61;
   padding: 20px;
   width: 100%;
+  background-color: #25523b;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #282828;
+  box-shadow: 2px 2px 4px #282828;
 }
 @media (min-width: 501px) {
   main .section-container section {
@@ -186,8 +184,6 @@ main .section-container section {
 }
 @media (min-width: 1000px) {
   main .section-container section {
-    background-color: #30694b;
-    color: #FFFFFF;
     width: 45%;
     height: 650px;
   }
@@ -204,11 +200,7 @@ main .section-container section .text-container h3 {
 }
 main .section-container section img {
   width: 100%;
-}
-@media (min-width: 1000px) {
-  main .section-container section img {
-    border: 2px solid #efe26e;
-  }
+  border: 2px solid #efe26e;
 }
 footer {
   display: flex;
@@ -218,13 +210,8 @@ footer {
   width: 100%;
   position: relative;
   top: 600px;
-  background-color: #5aab61;
+  background-color: #25523b;
   padding: 40px 0;
-}
-@media (min-width: 1000px) {
-  footer {
-    background-color: #25523b;
-  }
 }
 footer h3 {
   margin: 10px 0;
@@ -305,7 +292,7 @@ footer .social-links a {
   }
 }
 footer .social-links a:hover {
-  color: #FFFFFF;
+  color: #efe26e;
   transition: 0.2s ease;
 }
 * {
@@ -316,6 +303,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   display: flex;
