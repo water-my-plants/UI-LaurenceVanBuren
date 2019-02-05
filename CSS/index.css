@@ -140,12 +140,6 @@ footer .download-links {
 footer .download-links img {
   margin: 0 10px;
 }
-footer .download-links a.apple {
-  background-image: url(../Images/apple-button.png);
-}
-footer .download-links a.google {
-  background-image: url(../Images/google-play-button.png);
-}
 footer .social-links {
   display: flex;
   justify-content: space-evenly;
