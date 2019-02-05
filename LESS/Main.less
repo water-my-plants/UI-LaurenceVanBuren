@@ -5,6 +5,10 @@ main {
     top: 600px;
     .flex(none, center, column);
 
+    @media @desktop {
+        background-color: @wmp-green-light;
+    }
+
     section.intro {
         .flex(none, flex-start, column);
         width: 100%;
@@ -15,6 +19,10 @@ main {
 
         @media @tablet {
             padding: 0 10% 30px;
+        }
+
+        @media @desktop {
+            padding: 0 15% 30px;
         }
 
         h2 {
@@ -29,18 +37,44 @@ main {
     .section-container {
         .flex(none, center, column);
         width: 100%;
-        margin: 20px 0;
+        margin: 0 20px 20px;
+        padding: 20px 20px 0;
+
+        @media @desktop {
+            // background-color: @wmp-green-light;
+            .flex(space-between, center, row);
+            flex-wrap: wrap;
+            padding: 0 15%;
+        }
 
         section {
-            .flex(none, flex-start, column);
+            .flex(space-between, flex-start, column);
             .section();
+            width: 100%;
 
-            h3 {
-                margin: 10px 0 5px;
+            @media @desktop {
+                // .flex(space-between, flex-start, column);
+                background-color: @wmp-green-med;
+                color: @white;
+                width: 45%;
+                height: 650px;
+            }
+
+            .text-container {
+                .flex(none, flex-start, column);
+                width: 100%;
+
+                h3 {
+                    margin: 10px 0 5px;
+                }
             }
 
             img {
                 width: 100%;
+                @media @desktop {
+                    border: 2px solid @wmp-yellow;
+                    // max-height: 60%;
+                }
             }
         }
     }
