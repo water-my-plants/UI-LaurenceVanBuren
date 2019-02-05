@@ -8,16 +8,22 @@ main {
     section.intro {
         .flex(none, flex-start, column);
         width: 100%;
-        padding: 10px 10% 30px;
+        padding: 0 5% 30px;
         background-color: @wmp-green-light;
         color: @white;
         text-shadow: 1px 1px 3px rgb(60, 60, 60);
 
+        @media @tablet {
+            padding: 0 10% 30px;
+        }
+
         h2 {
             margin-bottom: 5px;
+            padding: 0 20px;
         }
         p {
             margin: 10px 0;
+            padding: 0 20px;
         }
     }
     .section-container {
