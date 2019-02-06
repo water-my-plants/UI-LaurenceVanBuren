@@ -4,10 +4,10 @@ main {
     width: 100%;
     position: relative;
     top: 600px;
-    .flex(none, center, column);
+    .flex(flex-start, center, column);
 
     section.intro {
-        .flex(none, flex-start, column);
+        .flex(center, flex-start, column);
         width: 100%;
         padding: 0 5%;
         background-color: @wmp-green-light;
@@ -32,7 +32,7 @@ main {
         }
     }
     .section-container {
-        .flex(none, center, column);
+        .flex(center, center, column);
         width: 100%;
         margin: 0 20px 20px;
         padding: 20px 20px 0;
@@ -59,7 +59,7 @@ main {
             }
 
             .text-container {
-                .flex(none, flex-start, column);
+                .flex(flex-start, flex-start, column);
                 width: 100%;
 
                 h3 {

@@ -49,7 +49,7 @@ header {
   flex-direction: column;
   width: 100%;
   height: 600px;
-  padding: 40% 0;
+  padding: 15% 0;
   background-image: url(../Images/wmp-header.jpg);
   background-size: cover;
   position: fixed;
@@ -155,13 +155,13 @@ main {
   position: relative;
   top: 600px;
   display: flex;
-  justify-content: none;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
 main section.intro {
   display: flex;
-  justify-content: none;
+  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
@@ -190,7 +190,7 @@ main section.intro p {
 }
 main .section-container {
   display: flex;
-  justify-content: none;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -234,7 +234,7 @@ main .section-container section {
 }
 main .section-container section .text-container {
   display: flex;
-  justify-content: none;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
@@ -251,7 +251,7 @@ main .section-container section img {
 }
 footer {
   display: flex;
-  justify-content: none;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -357,7 +357,7 @@ body {
 }
 body {
   display: flex;
-  justify-content: none;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   font-family: 'Heebo', 'Helvetica';
