@@ -1,0 +1,80 @@
+footer {
+    .flex(none, center, column);
+    width: 100%;
+    position: relative;
+    top: 600px;
+    // background-color: @wmp-green-light;
+    background-color: @wmp-green-dark;
+    padding: 40px 0 0;
+
+    h3 {
+        margin: 10px 0;
+    }
+
+    .download-links {
+        .flex(space-around, center, row);
+        width: 90%;
+        margin: 20px 0;
+
+        @media @tablet {
+            width: 80%;
+        }
+        @media @desktop {
+            .flex(center, center, row);
+            width: 70%;
+        }
+
+        img {
+            margin: 0 10px;
+            width: 50%;
+
+            @media @tablet {
+                width: 40%;
+            }
+
+            @media @desktop {
+                width: 30%;
+            }
+        }
+    }
+
+    .social-links {
+        .flex(space-evenly, center, row);
+        width: 90%;
+        margin: 20px 0;
+
+        @media @tablet {
+            width: 80%;
+        }
+
+        @media @desktop {
+            .flex(center, center, row);
+            width: 70%;
+        }
+
+        a {
+            margin: 0 20px;
+            color: @black;
+            text-decoration: none;
+            font-size: 3rem;
+            transition: .2s ease;
+
+            @media @tablet {
+                font-size: 3.8rem;
+            }
+
+            @media @desktop {
+                margin: 0 40px;
+            }
+        }
+
+        a:hover {
+            color: @wmp-yellow;
+            transition: .2s ease;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

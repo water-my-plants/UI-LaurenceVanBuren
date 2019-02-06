@@ -1,0 +1,83 @@
+header {
+    .flex(center, center, column); 
+    width: 100%;
+    height: 600px;
+    padding: 40% 0;
+    background-image: url(../Images/wmp-header.jpg);
+    background-size: cover;
+    // Stick to top
+    position: fixed;
+
+    @media @tablet {
+        padding: 10% 5%;
+    }
+    @media @desktop {
+        .flex(center, center, column); 
+        padding: 0 15%;
+    }
+
+    h1, h3 {
+        .text-shadow();
+        padding: none;
+        color: @white;
+        text-align: center;
+        width: 80%;
+        margin: 10px 0;
+        line-height: 1.2;
+
+        @media @desktop {
+            margin: 20px 0;
+        }
+    }
+    h1 {
+        font-weight: 900;
+    }
+    .btn-row {
+        .flex(center, center, column);
+        width: 100%;
+        margin: 20px 0;
+
+        @media @desktop {
+            .flex(center, center, row);
+        }
+
+        button {
+            .btn(@white, @white, @transparent);
+            .text-shadow();
+            width: 80%;
+            margin: 10px 0;
+            cursor: pointer;
+            font-size: 2rem;
+
+            @media @tablet {
+                width: 60%;
+            }
+
+            @media @desktop {
+                width: 20%;
+                margin: 0 20px;
+            }
+        }
+        .sign-up {
+            background-color: @white;
+            color: @black;
+            text-shadow: none;
+            transition: .1s ease;
+        }
+        .sign-up:hover {
+            background-color: @wmp-green-light;
+            border-color: @wmp-green-light;
+            color: @white;
+            .text-shadow();
+            transition: .1s ease;
+        }
+        .learn-more {
+            transition: .1s ease;
+        }
+        .learn-more:hover {
+            border-color: @wmp-yellow;
+            background-color: @wmp-yellow;
+            transition: .1s ease;
+        }
+    }
+}

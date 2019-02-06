@@ -1,0 +1,41 @@
+nav {
+    .flex(space-between, center, row);
+    width: 100%;
+    background-color: @wmp-green-dark;
+    box-shadow: 0px 1px 6px rgb(40, 40, 40);
+    position: fixed;
+    z-index: 2;
+    display: none;
+
+    @media @desktop {
+        display: flex;
+    }
+
+    h3 {
+        color: @white;
+        .text-shadow();
+        margin: 0 20px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        .flex(space-evenly, center, row);
+        margin: 0 10px;
+
+        a {
+            font-size: 1.4rem;
+            margin: 10px;
+            color: @white;
+            text-decoration: none;
+            .text-shadow();
+            transition: .1s ease;
+            border-bottom: 1px solid rgba(0, 0, 0, 0);
+        }
+
+        a:hover {
+            transition: .1s ease;
+            color: @wmp-yellow;
+            border-bottom: 1px solid @wmp-yellow;
+        }
+    }
+}
