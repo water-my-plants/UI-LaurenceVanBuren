@@ -16,3 +16,14 @@ const learnMoreBtn = document.querySelector('.learn-more');
 learnMoreBtn.addEventListener('click', () => {
     location.href = "#intro";
 });
+
+class Card {
+    constructor(card){
+        // Props
+
+    }
+    // Methods
+}
+
+const cards = document.querySelectorAll(".card");
+cards.forEach(card => new card(card));
