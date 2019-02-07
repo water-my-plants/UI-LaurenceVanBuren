@@ -18,9 +18,9 @@ class Card {
             setTimeout(() => {
                 this.cardText.classList.toggle('block');
                 this.cardImg.classList.toggle('block');     
-            }, 300);
+            }, 200);
         } else {
-            TweenMax.to(this.card, .3, {height: '625px'});
+            TweenMax.to(this.card, .3, {height: '500px'});
             this.cardText.classList.toggle('block');
             this.cardImg.classList.toggle('block');
         }
@@ -34,7 +34,7 @@ cards.forEach(card => new Card(card));
 window.addEventListener('resize', () => {
     const width = window.innerWidth || document.documentElement.clientWidth;
     if (width >= 501) {
-        cards.forEach((card) => card.style.height = '700px');
+        cards.forEach((card) => card.style.height = '675px');
     } else {
         cards.forEach((card) => card.style.height = '63px');
     }
@@ -48,6 +48,11 @@ wmp.addEventListener('click', () => {
 })
 
 // Header
+const logInBtn = document.querySelector('.log-in');
+logInBtn.addEventListener('click', () => {
+    location.href = "https://water-my-plants-client.herokuapp.com/login";
+});
+
 const signUpBtn = document.querySelector('.sign-up');
 signUpBtn.addEventListener('click', () => {
     location.href = "https://water-my-plants-client.herokuapp.com/register";

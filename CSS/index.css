@@ -133,19 +133,25 @@ header .btn-row button:active {
     margin: 0 20px;
   }
 }
+@media (min-width: 1000px) {
+  header .btn-row .log-in {
+    display: none;
+  }
+}
 header .btn-row .sign-up {
   background-color: #FFFFFF;
   color: #000000;
   text-shadow: none;
-  transition: 0.1s ease;
 }
 header .btn-row .sign-up:hover {
   background-color: #5aab61;
   border-color: #5aab61;
   color: #FFFFFF;
   text-shadow: 1px 1px 2px #282828;
+  transition: 0.1s ease;
 }
-header .btn-row .learn-more:hover {
+header .btn-row .learn-more:hover,
+header .btn-row .log-in:hover {
   border-color: #efe26e;
   background-color: #efe26e;
   transition: 0.1s ease;
@@ -233,13 +239,13 @@ main .section-container {
 @media (min-width: 501px) {
   .section-container section {
     box-shadow: 3px 3px 6px #282828;
-    height: 700px;
+    height: 675px;
   }
 }
 @media (min-width: 1000px) {
   .section-container section {
     width: 45%;
-    height: 700px;
+    height: 625px;
   }
 }
 .section-container section .text-container {
