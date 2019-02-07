@@ -28,7 +28,7 @@ class Card {
     }
     // Methods
     toggleContent() {
-        console.log(`Clicked on ${this}!`);
+        console.log(window.document.clientWidth);
         this.arrowBtn.classList.toggle('rotate');
 
         if (this.cardText.classList.contains('block')){
@@ -47,3 +47,13 @@ class Card {
 
 const cards = document.querySelectorAll(".card");
 cards.forEach(card => new Card(card));
+
+// Fixes bug that doesn't properly display card section on window resize
+window.addEventListener('resize', () => {
+    const width = window.innerWidth || document.documentElement.clientWidth;
+    if (width >= 501) {
+        cards.forEach((card) => card.style.height = '700px');
+    } else {
+        cards.forEach((card) => card.style.height = '63px');
+    }
+});

@@ -233,6 +233,7 @@ main .section-container {
 @media (min-width: 501px) {
   .section-container section {
     box-shadow: 3px 3px 6px #282828;
+    height: 700px;
   }
 }
 @media (min-width: 1000px) {
