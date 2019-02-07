@@ -41,13 +41,14 @@ header {
             .flex(center, center, row);
         }
 
-        button {
+        button, button:active {
             .btn(@white, @white, @transparent);
             .text-shadow();
             width: 80%;
             margin: 10px 0;
             cursor: pointer;
             font-size: 2rem;
+            transition: .1s ease;
 
             @media @tablet {
                 width: 60%;
@@ -69,10 +70,6 @@ header {
             border-color: @wmp-green-light;
             color: @white;
             .text-shadow();
-            transition: .1s ease;
-        }
-        .learn-more {
-            transition: .1s ease;
         }
         .learn-more:hover {
             border-color: @wmp-yellow;
