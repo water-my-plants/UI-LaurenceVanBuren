@@ -59,19 +59,24 @@ header {
                 margin: 0 20px;
             }
         }
+        .log-in {
+            @media @desktop {
+                display: none;
+            }
+        }
         .sign-up {
             background-color: @white;
             color: @black;
             text-shadow: none;
-            transition: .1s ease;
         }
         .sign-up:hover {
             background-color: @wmp-green-light;
             border-color: @wmp-green-light;
             color: @white;
             .text-shadow();
+            transition: .1s ease;
         }
-        .learn-more:hover {
+        .learn-more:hover, .log-in:hover {
             border-color: @wmp-yellow;
             background-color: @wmp-yellow;
             transition: .1s ease;
