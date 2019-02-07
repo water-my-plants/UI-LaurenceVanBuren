@@ -359,6 +359,7 @@ footer .download-links {
 footer .download-links img {
   margin: 0 10px;
   width: 50%;
+  cursor: pointer;
 }
 @media (min-width: 501px) {
   footer .download-links img {
