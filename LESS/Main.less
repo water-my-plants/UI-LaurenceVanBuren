@@ -42,38 +42,97 @@ main {
             flex-wrap: wrap;
             padding: 0 15%;
         }
+    }
+}
 
-        section {
-            .flex(space-between, flex-start, column);
-            .section();
+.section-container section {
+    .flex(space-between, flex-start, column);
+    .section();
+    width: 100%;
+    background-color: @wmp-green-med;
+    color: @white;
+    .text-shadow();
+    height: 63px;
+    
+    @media @tablet {
+        .box-shadow();
+        height: 700px;
+    }
+
+    @media @desktop {
+        width: 45%;
+        height: 700px;
+    }
+
+    .text-container {
+        .flex(flex-start, flex-start, column);
+        width: 100%;
+
+        .card-title {
+            .flex(space-between, center, row);
             width: 100%;
-            background-color: @wmp-green-dark;
-            color: @white;
-            .text-shadow();
-            .box-shadow();
+            border-bottom: 1px solid @wmp-yellow;
+            margin: 12px 0 8px;
 
-            @media @desktop {
-                width: 45%;
-                // height: 650px;
-                height: 700px;
+            @media @tablet {
+                margin: 0;
             }
 
-            .text-container {
-                .flex(flex-start, flex-start, column);
+            h3 {
+                margin: 0;
                 width: 100%;
+                padding-bottom: 0;
 
-                h3 {
+                @media @tablet {
                     margin: 10px 0 5px;
-                    width: 100%;
-                    padding-bottom: 14px;
-                    border-bottom: 1px solid @wmp-yellow;
+                    padding-bottom: 6px;
                 }
             }
 
-            img {
-                width: 100%;
-                border: 2px solid @wmp-yellow;
+            i {
+                font-size: 3.6rem;
+                cursor: pointer;
+                padding: 0 4px;
+                transition: .3s ease;
+
+                @media @desktop {
+                    display: none;
+                }
+                @media @tablet {
+                    display: none;
+                }
+            }
+            .rotate {
+                transform: rotate(-180deg);
+                transition: .3s ease;
             }
         }
+
+        p {
+            display: none;
+
+            @media @tablet {
+                display: block;
+            }
+        }
+        .block {
+            display: block;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        border: 2px solid @wmp-yellow;
+        display: none;
+        margin: 0 0 20px;
+
+        @media @tablet {
+            margin: 0;
+            display: block;
+        }
+    }
+    .block {
+        display: block;
     }
 }
