@@ -17,7 +17,7 @@ nav {
   }
 }
 nav img {
-  margin: 0 20px;
+  margin: 0 30px;
   cursor: pointer;
   height: 54px;
   width: auto;
@@ -27,11 +27,11 @@ nav .nav-links {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 nav .nav-links a {
-  font-size: 1.4rem;
-  margin: 10px;
+  font-size: 1.8rem;
+  margin: 15px;
   color: #FFFFFF;
   text-decoration: none;
   text-shadow: 1px 1px 2px #282828;
