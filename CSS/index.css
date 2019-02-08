@@ -242,7 +242,7 @@ main .section-container {
 @media (min-width: 1000px) {
   .section-container section {
     width: 45%;
-    max-height: 50%;
+    max-height: 48%;
   }
 }
 .section-container section .text-container {
