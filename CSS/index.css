@@ -70,7 +70,7 @@ header {
   }
 }
 header h1,
-header h3 {
+header h4 {
   text-shadow: 1px 1px 2px #282828;
   padding: none;
   color: #FFFFFF;
@@ -81,7 +81,7 @@ header h3 {
 }
 @media (min-width: 1000px) {
   header h1,
-  header h3 {
+  header h4 {
     margin: 20px 0;
   }
 }
